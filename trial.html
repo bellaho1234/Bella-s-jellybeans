@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>bella bean special flavours</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #347;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      background-color: #f78da7;
+      padding: 15px;
+      border-radius: 15px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+     
+    }
+    .intro {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .jellybean-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .jellybean-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .jellybean-card:hover {
+      transform: scale(1.05);
+    }
+    .jellybean-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .jellybean-title {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #f78da7;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Bella Bean Delight!</h1>
+  </header>
+  
+  <p class="intro">Discover the colorful and tasty world of Bella beans! From fruity bursts to rich dessert flavors, there's a bean for everyone.</p>
+
+  <div class="jellybean-grid">
+    <div class="jellybean-card">
+      <img src=" https://codehs.com/uploads/24399ef4bacd5b66597f76fe5b8a0de2" alt="Fruity Jellybeans" class="jellybean-image">
+      <h2 class="jellybean-title">Fruity Mix</h2>
+      <p>Experience the burst of classic fruity flavors like cherry, orange, and lemon.</p>
+    </div>
+    <div class="jellybean-card">
+      <img src="https://codehs.com/uploads/6eff3fddd4035e4fc0fb6c8e2c5c5205" alt="Dessert Jellybeans" class="jellybean-image">
+      <h2 class="jellybean-title">Dessert Dream</h2>
+      <p>Indulge in decadent flavors like chocolate fudge, vanilla bean, and caramel swirl.</p>
+    </div>
+     <div class="jellybean-card">
+      <img src="https://codehs.com/uploads/5765a07d297a0c966b4143ad66e37e2a" alt="special beans" class="jellybean-image">
+      <h2 class="jellybean-title">bella bean special</h2>
+      <p>taste the rainbow with the bella bean special.This bean tickles your senses and hits the right spot.</p>
+    </div>
+  </div>
+ </section>
+
+    <section id="game" class="game-section">
+       <br />&nbsp;<br />
+        <h2>Fun Bella Bean Game</h2>
+        <p>Guess the Number of Jelly Beans in the Jar between 1-100! Test your luck and skill!</p>
+        <input type="number" id="guess" placeholder="Enter your guess...">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="result"></p>
+
+        <script>
+            const correctAnswer = Math.floor(Math.random() * 100) + 1;
+
+            function checkGuess() {
+                const userGuess = document.getElementById('guess').value;
+                const resultText = document.getElementById('result');
+
+                if (userGuess == correctAnswer) {
+                    resultText.textContent = 'Congratulations! You guessed it right!';
+                    resultText.style.color = 'green';
+                } else if (userGuess > correctAnswer) {
+                    resultText.textContent = 'Too high! Try again.';
+                    resultText.style.color = 'red';
+                } else {
+                    resultText.textContent = 'Too low! Try again.';
+                    resultText.style.color = 'red';
+                }
+            }
+        </script>
+    </section>
+    <image src ="https://codehs.com/uploads/e7c03daeb983c8ff3167e038efaf0f27" width = "500px">
+  <footer>
+    <p> WE LOVE BELLA BEANS</p>
+  
+  </footer>
+  
+</body>
+</html>
